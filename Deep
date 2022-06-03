@@ -1,0 +1,9 @@
+var binanceClient = new BinanceClient(new BinanceClientOptions
+{
+	LogLevel = LogLevel.Debug,
+	ApiCredentials = new ApiCredentials("B3o1cz6j0TcqxVqTCStV4qh6mGDT0jQyqqFZu9k1Fclk56PpeVoG8iwKfy9qnAOM", "IGLK2CScc7H7Tmm341U2o8m7tGNgiNUVzGayvkIU20wf7NkDDFwcQYHBova79HXd"),
+	BaseAddress = BinanceApiAddresses.Default.RestClientAddress,
+	BaseAddressUsdtFutures = BinanceApiAddresses.Default.UsdtFuturesRestClientAddress,
+	AutoTimestamp = true,
+	TradeRulesBehaviour = TradeRulesBehaviour.ThrowError
+});
